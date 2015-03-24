@@ -316,6 +316,14 @@
       targets = targets.add( $( this ) );
     });
 
+    this.getCurrentImage = function() {
+      return image.length ? image : false;
+    };
+
+    this.getCurrentTarget = function() {
+      return target.length ? target : false;
+    };
+
     this.switchImageLightbox = function( index ) {
       var tmpTarget = targets.eq( index );
       if( tmpTarget.length ) {
