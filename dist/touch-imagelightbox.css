@@ -51,12 +51,10 @@ html {
     opacity: .5;
     -webkit-transform: scale(0.75);
   }
-
   50% {
     opacity: 1;
     -webkit-transform: scale(1);
   }
-
   100% {
     opacity: .5;
     -webkit-transform: scale(0.75);
@@ -67,12 +65,10 @@ html {
     opacity: .5;
     -moz-transform: scale(0.75);
   }
-
   50% {
     opacity: 1;
     -moz-transform: scale(1);
   }
-
   100% {
     opacity: .5;
     -moz-transform: scale(0.75);
@@ -83,12 +79,10 @@ html {
     opacity: .5;
     -o-transform: scale(0.75);
   }
-
   50% {
     opacity: 1;
     -o-transform: scale(1);
   }
-
   100% {
     opacity: .5;
     -o-transform: scale(0.75);
@@ -99,12 +93,10 @@ html {
     opacity: .5;
     transform: scale(0.75);
   }
-
   50% {
     opacity: 1;
     transform: scale(1);
   }
-
   100% {
     opacity: .5;
     transform: scale(0.75);
@@ -223,7 +215,6 @@ html {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -232,7 +223,6 @@ html {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -241,7 +231,6 @@ html {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -250,7 +239,6 @@ html {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }

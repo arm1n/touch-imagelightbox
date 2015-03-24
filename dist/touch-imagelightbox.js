@@ -1,6 +1,6 @@
-/*! touch-imagelightbox - v0.1.0 - 2014-06-27
+/*! touch-imagelightbox - v0.1.0 - 2015-03-24
 * https://github.com/victorhaggqvist/touch-imagelightbox
-* Copyright (c) 2014 Osvaldas Valutis (www.osvaldas.info); Licensed MIT
+* Copyright (c) 2015 Osvaldas Valutis (www.osvaldas.info); Licensed MIT
 * Contributors Victor Häggqvist (victorhaggqvist.com) */
 ;( function( $, window, document, undefined ) {
   'use strict';
@@ -62,7 +62,9 @@
               onStart:        false,
               onEnd:          false,
               onLoadStart:    false,
-              onLoadEnd:      false
+              onLoadEnd:      false,
+              scaleX:         0.8,
+              scaleY:         0.9,
              },
              options);
 
@@ -84,8 +86,8 @@
       setImage = function() {
         if( !image.length ) return false;
 
-        var screenWidth = $( window ).width() * 0.8,
-        screenHeight = $( window ).height() * 0.9,
+        var screenWidth = $( window ).width() * options.scaleX,
+        screenHeight = $( window ).height() * options.scaleY,
         tmpImage = new Image();
 
         tmpImage.src  = image.attr( 'src' );
@@ -316,6 +318,14 @@
       if( !isTargetValid( this ) ) return true;
       targets = targets.add( $( this ) );
     });
+
+    this.getCurrentImage = function() {
+      return image.length ? image : false;
+    };
+
+    this.getCurrentTarget = function() {
+      return target.length ? target : false;
+    };
 
     this.switchImageLightbox = function( index ) {
       var tmpTarget = targets.eq( index );
