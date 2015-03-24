@@ -59,7 +59,9 @@
               onStart:        false,
               onEnd:          false,
               onLoadStart:    false,
-              onLoadEnd:      false
+              onLoadEnd:      false,
+              scaleX:         0.8,
+              scaleY:         0.9,
              },
              options);
 
@@ -81,8 +83,8 @@
       setImage = function() {
         if( !image.length ) return false;
 
-        var screenWidth = $( window ).width() * 0.8,
-        screenHeight = $( window ).height() * 0.9,
+        var screenWidth = $( window ).width() * options.scaleX,
+        screenHeight = $( window ).height() * options.scaleY,
         tmpImage = new Image();
 
         tmpImage.src  = image.attr( 'src' );
